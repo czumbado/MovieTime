@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Movie Time</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Agrega los enlaces a los archivos CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  
+  <link href="/css/estilos.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="#">Cartelera</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Iniciar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1 class="titulo1">Cine</h1>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Titulo</th>
+          <th>Telefono</th>
+          <th>Email</th>
+          <th>Direccion</th>
+          <th>.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Utiliza la variable movies que se pasó desde el controlador para generar las filas de la tabla -->
+        <tr th:each="movie : ${movies}">
+          <td th:text="${movie.id}"></td>
+          <td th:text="${movie.title}"></td>
+          <td th:text="${movie.telFk}"></td>
+          <td th:text="${movie.emailFk}"></td>
+          <td th:text="${movie.direccionFk}"></td>
+          <td>
+            <button class="btn btn-primary editBtn">Editar</button>
+            <button class="btn btn-danger deleteBtn">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Agrega el enlace al archivo JavaScript de Bootstrap (opcional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Obtén todos los botones de edición
+    const editButtons = document.querySelectorAll('.editBtn');
+
+    // Asocia el evento de clic a cada botón de edición
+    editButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        // Obtén el ID del elemento a editar desde el atributo 'data-id' del botón
+        const id = button.getAttribute('data-id');
+        
+        // Realiza la lógica de edición aquí
+        console.log('Editar elemento con ID:', id);
+      });
+    });
+
+    // Obtén todos los botones de eliminación
+    const deleteButtons = document.querySelectorAll('.deleteBtn');
+
+    // Asocia el evento de clic a cada botón de eliminación
+    deleteButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        // Obtén el ID del elemento a eliminar desde el atributo 'data-id' del botón
+        const id = button.getAttribute('data-id');
+        
+        // Realiza la lógica de eliminación aquí
+        console.log('Eliminar elemento con ID:', id);
+      });
+    });
+  </script>
+</body>
+</html>
