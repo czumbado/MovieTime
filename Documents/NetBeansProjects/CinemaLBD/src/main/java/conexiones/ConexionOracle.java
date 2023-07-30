@@ -8,8 +8,8 @@ import javax.swing.JOptionPane;
 public class ConexionOracle {
 
     private final String DRIVER = "oracle.jdbc.driver.OracleDriver";
-    private final String URL = "jdbc:oracle:thin:@//localhost:1521/orcl";
-    private final String USER = "localhost";
+    private final String URL = "jdbc:oracle:thin:@localhost:1521:orcl";
+    private final String USER = "SYSTEM";
     private final String PASWORD = "Oracle2023  ";
 
     public Connection cadena;
