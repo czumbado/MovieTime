@@ -41,7 +41,7 @@ public class DireccionController {
     @PostMapping("/direccion/crear")
     public String createDireccion(@ModelAttribute Direccion direccion) {
         direccionService.saveDireccion(direccion);
-        return "redirect:/direcciones"; // Redirigir a la lista de direcciones después de crear una nueva dirección
+        return "redirect:/direccion"; // Redirigir a la lista de direcciones después de crear una nueva dirección
     }
 
     @GetMapping("/direccion/editar/{id}")
@@ -51,16 +51,17 @@ public class DireccionController {
         return "editar_direccion"; // Nombre de la vista HTML para mostrar el formulario de edición
     }
 
-    @PostMapping("/direccion/editar/{id}")
+     @PostMapping("/direccion/editar/{id}")
     public String updateDireccion(@PathVariable Long id, @ModelAttribute Direccion direccion) {
         direccion.setId_direccion(id);
         direccionService.saveDireccion(direccion);
-        return "redirect:/direcciones"; // Redirigir a la lista de direcciones después de editar una dirección
+        return "redirect:/direccion"; // Redirigir a la lista de direcciones después de editar una dirección
     }
 
     @GetMapping("/direccion/eliminar/{id}")
     public String deleteDireccion(@PathVariable Long id) {
         direccionService.deleteDireccion(id);
-        return "redirect:/direcciones"; // Redirigir a la lista de direcciones después de eliminar una dirección
+        return "redirect:/direccion"; // Redirigir a la lista de direcciones después de eliminar una dirección
     }
+   
 }
