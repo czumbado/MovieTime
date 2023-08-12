@@ -1,0 +1,53 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+ 
+  background-size: cover;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 15px;
+}
+
+/* Estilos para la sección del título con fondo de imagen */
+.bg-image {
+  background-image: url('/img/Cine1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 0;
+}
+
+/* Estilos para el título de la sección */
+.display-4 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.lead {
+  font-size: 1.5rem;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 15px 0;
+}
+
+/* Personaliza el tamaño de tu logo en la barra de navegación */
+.navbar-brand img {
+  max-width: 40px;
+  margin-right: 10px;
+}

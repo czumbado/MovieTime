@@ -1,9 +1,11 @@
+/* Reset de estilos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilos globales */
 body {
   background-color: whitesmoke;
   display: flex;
@@ -14,8 +16,8 @@ body {
   margin: 0;
 }
 
+/* Estilos de encabezado */
 header {
-  background-color: black;
   padding: 20px;
   width: 100%;
   box-sizing: border-box;
@@ -48,20 +50,23 @@ nav ul li a:hover {
   color: #ffca28;
 }
 
+/* Estilos de contenedor */
 .container {
   width: 100%;
   padding-left: 0;
   padding-right: 0;
 }
 
+/* Estilos para la sección de título */
 .titulo1 {
   text-align: center;
-  color: #fff;
+  color: black;
   font-size: 36px;
   font-weight: bold;
   margin-top: 20px;
 }
 
+/* Estilos para el fondo de imagen */
 .body-dividido {
   background-color: black;
   display: flex;
@@ -83,7 +88,7 @@ body {
   background-position: center;
   height: 100vh;
   width: 100vw;
- transform: translate(-8.5%, 0%);
+  transform: translate(-8.5%, 0%);
   left: -100%;
 }
 
@@ -107,48 +112,94 @@ html {
 
 /* Estilo para la cuadrícula de imágenes */
 .row {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card-img-top {
-    max-height: 200px;
-    object-fit: cover;
+  max-height: 200px;
+  object-fit: cover;
 }
 
 .card-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .card-body {
-    padding: 15px;
+  padding: 15px;
 }
 
 /* Estilo para la paginación */
 .pagination {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    list-style: none;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
 .page-item {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 
 .page-link {
-    padding: 5px 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    color: #333;
-    text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
 }
 
 .page-link:hover {
-    background-color: #f4f4f4;
+  background-color: #f4f4f4;
 }
+
+/* Estilos para el carousel */
+.carousel-item {
+  max-height: 400px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+}
+
+.carousel-caption h5 {
+  color: white;
+}
+
+/* Estilos para el título "Movie Time" */
+.titulo2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para la sección de imagen de fondo */
+.bg-image {
+  padding: 10px;
+  background-image: url(/img/inicio.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  transform: translate(0%, 0%);
+  left: -100%;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 15px 0;
+  width: 100%;
+}
+
