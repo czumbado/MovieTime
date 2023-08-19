@@ -1,3 +1,3 @@
-# MovieTime
+# AHORA EL PORYETCO SE LLAMA CENTRAL CINE PORQUE NO´SE SI MIS COMPAÑEROS VAN A EXPONER ALGO Y PARA NO COINCIDIR CON EL MISMO NOMBRE
 Carlos Zumbado Cárdenas
 Debe entrar a la rama Master para ver los commits
