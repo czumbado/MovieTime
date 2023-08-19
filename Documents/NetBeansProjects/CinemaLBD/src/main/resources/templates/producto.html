@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Productos - MovieTime</title>
+        <title>Productos - CentralCine</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,11 +11,11 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-grey bg-grey">
                 <div class="container">
                     <a class="navbar-brand" href="/index.html">
-                        <img src="/img/botonInicio.png" alt="Movie Time Logo" width="50">
-                        Movie Time
+                        <img src="/img/botonInicio.png" alt="Central Cine Logo" width="50">
+                        Central Cine
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -53,7 +53,7 @@
                                 <img src="/img/productos.jpg" class="card-img-top" alt="Producto">
                                 <div class="card-body">
                                     <h5 class="card-title" th:text="${producto.pro_nombre}"></h5>
-                                    <p class="card-text" th:text="'Cantidad: ' + ${producto.pro_cantidad}"></p>
+                                    <p class="card-text" th:text="'Inventario: ' + ${producto.pro_cantidad}"></p>
                                     <p class="card-text" th:text="'Precio: ' + ${producto.pro_precio}"></p>
                                     <div class="text-center">
                                         <a th:href="@{'/producto/editar/' + ${producto.id_producto}}" class="btn btn-outline-primary btn-sm mx-1">Editar</a>
@@ -78,7 +78,7 @@
         </section>
 <footer class="bg-dark text-light text-center py-3">
         <div class="container-fluid">
-            <p>&copy; 2023 Movie Time. Todos los derechos reservados.</p>
+            <p>&copy; 2023 Central Cine. Todos los derechos reservados.</p>
         </div>
     </footer>
         <!-- Agrega el enlace al archivo JavaScript de Bootstrap (opcional) -->

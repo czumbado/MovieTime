@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es" xmlns:th="http://www.thymeleaf.org">
     <head>
-        <title>Editar Producto - MovieTime</title>
+        <title>Editar Producto - CentralCine</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Enlaces a los archivos CSS de Bootstrap -->
@@ -10,11 +10,11 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-grey bg-grey">
                 <div class="container">
                     <a class="navbar-brand" href="/index.html">
-                        <img src="/img/botonInicio.png" alt="Movie Time Logo" width="50">
-                        Movie Time
+                        <img src="/img/botonInicio.png" alt="Central Cine Logo" width="50">
+                        Central Cine
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -54,9 +54,9 @@
                             <input type="number" step="0.01" id="precio" name="pro_precio" class="form-control" th:value="${producto.pro_precio}" required>
                         </div>
                         <input type="hidden" id="precioOriginal" th:value="${producto.pro_precio}">
-                        <button type="button" class="btn btn-primary" onclick="duplicarPrecio()">Duplicar Precio</button>
-                        <button type="submit" class="btn btn-primary">Actualizar</button>
-                        <a href="/producto" class="btn btn-secondary">Cancelar</a>
+                        <button type="button" class="btn btn-success" onclick="duplicarPrecio()">Total</button>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                        <a href="/producto" class="btn btn-danger">Cancelar</a>
                     </form>
                 </div>
             </div>
